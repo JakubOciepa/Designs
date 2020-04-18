@@ -84,7 +84,7 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Grid.Row="0" Text="Expenses/"
+                        <TextBlock Grid.Row="0" Text="Expenses / "
                                FontSize="18"
                                FontFamily="Tahoma"
                                Foreground="#605e5c"/>
@@ -137,7 +137,7 @@
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="50"/>
-                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="0" 
@@ -255,13 +255,757 @@
                                         Foreground="#69797e"
                                         FontSize="18"
                                         Content="&#xE16E;"/>
-                                <TextBox Width="300" Margin="5" Style="{StaticResource TextBoxStyle}">
+                                <TextBox Width="300" Margin="5" Style="{StaticResource TextBoxStyle}" Text="Search..." >
 
                                 </TextBox>
                             </StackPanel>
                         </Grid>
+                        <StackPanel Orientation="Vertical" Grid.Row="1" Margin="0 25 0 0" >
+                            <Grid Margin="50 0" Height="50">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <CheckBox Grid.Column="0" 
+                                          HorizontalAlignment="Center"
+                                          VerticalAlignment="Center">
+                                    <CheckBox.LayoutTransform>
+                                        <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                                    </CheckBox.LayoutTransform>
+                                </CheckBox>
+                                <TextBlock Text="Person"
+                                           Grid.Column="1"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="SemiBold"
+                                           Foreground="#605e5c">
+                                </TextBlock>
+                                <TextBlock Text="Description"
+                                           Grid.Column="2"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="SemiBold"
+                                           Foreground="#605e5c">
+                                </TextBlock>
+                                <TextBlock Text="Date"
+                                           Grid.Column="3"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="SemiBold"
+                                           Foreground="#605e5c">
+                                </TextBlock>
+                                <TextBlock Text="Value"
+                                           Grid.Column="4"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="SemiBold"
+                                           Foreground="#605e5c">
+                                </TextBlock>
+
+                            </Grid>
+                            <Border BorderBrush="#c8c6c4" 
+                                    BorderThickness="0 1 0 1"  
+                                    Margin="50 0" Height="50"
+                                    Background="#faf9f8">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox Grid.Column="0" 
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" 
+                                              IsChecked="True">
+                                        <CheckBox.LayoutTransform>
+                                            <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                                        </CheckBox.LayoutTransform>
+                                    </CheckBox>
+                                    <StackPanel  Grid.Column="1" Orientation="Horizontal" Margin="10 0" >
+                                        <Grid Height="45"
+                                                Width="45">
+                                            <Image Source="D:\Projekty\Designs\Contador\Contador\Resources\kot.jpg">
+                                                <Image.Clip>
+                                                    <EllipseGeometry Center="21,18" RadiusX="15" RadiusY="15" />
+                                                </Image.Clip>
+                                            </Image>
+                                        </Grid>
+                                        <TextBlock Text="Marysia"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                        </TextBlock>
+                                    </StackPanel>
+                                    
+                                    <TextBlock Text="Słodycze"
+                                           Grid.Column="2"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                    <TextBlock Text="18.04.2020"
+                                           Grid.Column="3"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                    <TextBlock Text="12.00zł"
+                                           Grid.Column="4"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                </Grid>
+                            </Border>
+                            <Border BorderBrush="#c8c6c4" 
+                                    BorderThickness="0 1 0 1"  
+                                    Margin="50 0" Height="50"
+                                    Background="#FFF">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox Grid.Column="0" 
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" 
+                                              IsChecked="False">
+                                        <CheckBox.LayoutTransform>
+                                            <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                                        </CheckBox.LayoutTransform>
+                                    </CheckBox>
+                                    <StackPanel  Grid.Column="1" Orientation="Horizontal" Margin="10 0" >
+                                        <Grid Height="45"
+                                              Width="45">
+                                            <Image Source="D:\Projekty\Designs\Contador\Contador\Resources\Paskuda.jpg" 
+                                                   HorizontalAlignment="Center" 
+                                                   VerticalAlignment="Center">
+                                                <Image.Clip>
+                                                    <EllipseGeometry Center="21,21" RadiusX="15" RadiusY="15" />
+                                                </Image.Clip>
+                                            </Image>
+                                        </Grid>
+                                        <TextBlock Text="Kubuś"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                        </TextBlock>
+                                    </StackPanel>
+                                    <TextBlock Text="Warzywa"
+                                           Grid.Column="2"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                    <TextBlock Text="18.04.2020"
+                                           Grid.Column="3"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                    <TextBlock Text="4.00zł"
+                                           Grid.Column="4"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                </Grid>
+                            </Border>
+                            <Border BorderBrush="#c8c6c4" 
+                                    BorderThickness="0 1 0 1"  
+                                    Margin="50 0" Height="50"
+                                    Background="#FFF">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox Grid.Column="0" 
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" 
+                                              IsChecked="False">
+                                        <CheckBox.LayoutTransform>
+                                            <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                                        </CheckBox.LayoutTransform>
+                                    </CheckBox>
+                                    <StackPanel  Grid.Column="1" Orientation="Horizontal" Margin="10 0" >
+                                        <Grid Height="45"
+                                                Width="45">
+                                            <Image Source="D:\Projekty\Designs\Contador\Contador\Resources\kot.jpg">
+                                                <Image.Clip>
+                                                    <EllipseGeometry Center="21,18" RadiusX="15" RadiusY="15" />
+                                                </Image.Clip>
+                                            </Image>
+                                        </Grid>
+                                        <TextBlock Text="Marysia"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                        </TextBlock>
+                                    </StackPanel>
+
+                                    <TextBlock Text="Słodycze"
+                                           Grid.Column="2"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                    <TextBlock Text="18.04.2020"
+                                           Grid.Column="3"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                    <TextBlock Text="12.00zł"
+                                           Grid.Column="4"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                </Grid>
+                            </Border>
+                            <Border BorderBrush="#c8c6c4" 
+                                    BorderThickness="0 1 0 1"  
+                                    Margin="50 0" Height="50"
+                                    Background="#faf9f8">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox Grid.Column="0" 
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" 
+                                              IsChecked="True">
+                                        <CheckBox.LayoutTransform>
+                                            <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                                        </CheckBox.LayoutTransform>
+                                    </CheckBox>
+                                    <StackPanel  Grid.Column="1" Orientation="Horizontal" Margin="10 0" >
+                                        <Grid Height="45"
+                                              Width="45">
+                                            <Image Source="D:\Projekty\Designs\Contador\Contador\Resources\Paskuda.jpg" 
+                                                   HorizontalAlignment="Center" 
+                                                   VerticalAlignment="Center">
+                                                <Image.Clip>
+                                                    <EllipseGeometry Center="21,21" RadiusX="15" RadiusY="15" />
+                                                </Image.Clip>
+                                            </Image>
+                                        </Grid>
+                                        <TextBlock Text="Kubuś"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                        </TextBlock>
+                                    </StackPanel>
+                                    <TextBlock Text="Warzywa"
+                                           Grid.Column="2"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                    <TextBlock Text="18.04.2020"
+                                           Grid.Column="3"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                    <TextBlock Text="4.00zł"
+                                           Grid.Column="4"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                </Grid>
+                            </Border>
+                            <Border BorderBrush="#c8c6c4" 
+                                    BorderThickness="0 1 0 1"  
+                                    Margin="50 0" Height="50"
+                                    Background="#FFF">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox Grid.Column="0" 
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" 
+                                              IsChecked="False">
+                                        <CheckBox.LayoutTransform>
+                                            <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                                        </CheckBox.LayoutTransform>
+                                    </CheckBox>
+                                    <StackPanel  Grid.Column="1" Orientation="Horizontal" Margin="10 0" >
+                                        <Grid Height="45"
+                                                Width="45">
+                                            <Image Source="D:\Projekty\Designs\Contador\Contador\Resources\kot.jpg">
+                                                <Image.Clip>
+                                                    <EllipseGeometry Center="21,18" RadiusX="15" RadiusY="15" />
+                                                </Image.Clip>
+                                            </Image>
+                                        </Grid>
+                                        <TextBlock Text="Marysia"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                        </TextBlock>
+                                    </StackPanel>
+
+                                    <TextBlock Text="Słodycze"
+                                           Grid.Column="2"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                    <TextBlock Text="18.04.2020"
+                                           Grid.Column="3"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                    <TextBlock Text="12.00zł"
+                                           Grid.Column="4"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                </Grid>
+                            </Border>
+                            <Border BorderBrush="#c8c6c4" 
+                                    BorderThickness="0 1 0 1"  
+                                    Margin="20 0 -10 0" Height="50"
+                                    Background="#FFF" Panel.ZIndex="3">
+                                <Border.Effect>
+                                    <DropShadowEffect Color="Black" 
+                                                      ShadowDepth="9" 
+                                                      Opacity="0.3" 
+                                                      BlurRadius="45"
+                                                      Direction="240"/>
+                                </Border.Effect>
+                                <Grid Margin="30 0 12 0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox Grid.Column="0" 
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" 
+                                              IsChecked="True">
+                                        <CheckBox.LayoutTransform>
+                                            <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                                        </CheckBox.LayoutTransform>
+                                    </CheckBox>
+                                    <StackPanel  Grid.Column="1" Orientation="Horizontal" Margin="10 0" >
+                                        <Grid Height="45"
+                                              Width="45">
+                                            <Image Source="D:\Projekty\Designs\Contador\Contador\Resources\Paskuda.jpg" 
+                                                   HorizontalAlignment="Center" 
+                                                   VerticalAlignment="Center">
+                                                <Image.Clip>
+                                                    <EllipseGeometry Center="21,21" RadiusX="15" RadiusY="15" />
+                                                </Image.Clip>
+                                            </Image>
+                                        </Grid>
+                                        <TextBlock Text="Kubuś"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                        </TextBlock>
+                                    </StackPanel>
+                                    <TextBlock Text="Warzywa"
+                                           Grid.Column="2"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                    <TextBlock Text="18.04.2020"
+                                           Grid.Column="3"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                    <TextBlock Text="4.00zł"
+                                           Grid.Column="4"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                              
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                    <StackPanel Grid.Column="5" Orientation="Horizontal" Margin="-50 0 0 0">
+                                    <Button x:Name="PrintElemBtn" 
+                                            HorizontalAlignment="Left"
+                                            Height="40"
+                                            Width="40"
+                                            FontFamily="Segoe UI Symbol"
+                                            FontSize="21"
+                                            Margin="3 0"
+                                            Foreground="#0078d4"
+                                            Background="White"
+                                            Content="&#xE104;">
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Border Background="{TemplateBinding Background}"
+                                                CornerRadius="3">
+                                                    <TextBlock Text="{TemplateBinding Content}" 
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"
+                                                   FontSize="{TemplateBinding FontSize}"
+                                                   FontFamily="{TemplateBinding FontFamily}"
+                                                   Foreground="{TemplateBinding Foreground}">
+                                                    </TextBlock>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+                                    <Button x:Name="RemoveElemBtn" 
+                                    HorizontalAlignment="Left"
+                                    Height="40"
+                                    Width="40"
+                                    FontFamily="Segoe UI Symbol"
+                                    FontSize="21"
+                                    Margin="3 0"
+                                    Foreground="#d13438"
+                                    Background="White"
+                                    Content="&#xE107;">
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Border Background="{TemplateBinding Background}"
+                                                CornerRadius="3">
+                                                    <TextBlock Text="{TemplateBinding Content}" 
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"
+                                                   FontSize="{TemplateBinding FontSize}"
+                                                   FontFamily="{TemplateBinding FontFamily}"
+                                                   Foreground="{TemplateBinding Foreground}">
+                                                    </TextBlock>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+                                    </StackPanel>
+                                </Grid>                                
+                            </Border>
+                            <Border BorderBrush="#c8c6c4" 
+                                    BorderThickness="0 1 0 1"  
+                                    Margin="50 0" Height="50"
+                                    Background="#FFF">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox Grid.Column="0" 
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" 
+                                              IsChecked="False">
+                                        <CheckBox.LayoutTransform>
+                                            <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                                        </CheckBox.LayoutTransform>
+                                    </CheckBox>
+                                    <StackPanel  Grid.Column="1" Orientation="Horizontal" Margin="10 0" >
+                                        <Grid Height="45"
+                                                Width="45">
+                                            <Image Source="D:\Projekty\Designs\Contador\Contador\Resources\kot.jpg">
+                                                <Image.Clip>
+                                                    <EllipseGeometry Center="21,18" RadiusX="15" RadiusY="15" />
+                                                </Image.Clip>
+                                            </Image>
+                                        </Grid>
+                                        <TextBlock Text="Marysia"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                        </TextBlock>
+                                    </StackPanel>
+
+                                    <TextBlock Text="Słodycze"
+                                           Grid.Column="2"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                    <TextBlock Text="18.04.2020"
+                                           Grid.Column="3"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                    <TextBlock Text="12.00zł"
+                                           Grid.Column="4"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"
+                                           FontSize="18"
+                                           FontFamily="Tahoma"
+                                           FontWeight="Normal"
+                                           Foreground="#605e5c">
+                                    </TextBlock>
+                                </Grid>
+                            </Border>
+                            
+                        </StackPanel>
+                        <Grid x:Name="ExpensesFooter" 
+                      Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Button x:Name="ItemsOnScreen" 
+                                HorizontalAlignment="Left"
+                                Height="40"
+                                Width="200"
+                                FontFamily="Tahoma"
+                                FontSize="21"
+                                Margin="50 20"
+                                Background="White">
+                                <StackPanel Orientation="Horizontal" 
+                                    HorizontalAlignment="Center" 
+                                    VerticalAlignment="Center">
+                                    <TextBlock Text="Show: 7 " Foreground="#3b3a39" FontSize="18"/>
+                                    <TextBlock Text="^" Foreground="#3b3a39" 
+                                       FontSize="18" FontWeight="Bold"
+                                       VerticalAlignment="Center" Margin="0 -3 0 0">
+                                        <TextBlock.LayoutTransform>
+                                            <RotateTransform Angle="180"/>
+                                        </TextBlock.LayoutTransform>
+                                    </TextBlock>
+                                </StackPanel>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}"
+                                                CornerRadius="3">
+                                            <ContentPresenter VerticalAlignment="Stretch" 
+                                                      HorizontalAlignment="Stretch"
+                                                      Content="{TemplateBinding Content}">
+                                            </ContentPresenter>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                                <Button.Effect>
+                                    <DropShadowEffect ShadowDepth="3" 
+                                                      BlurRadius="15" 
+                                                      Direction="280" 
+                                                      Color="#FFC8C6C4"
+                                                      RenderingBias="Quality"              
+                                                      Opacity="0.3"/>
+                                </Button.Effect>
+                            </Button>
+                            <StackPanel Orientation="Horizontal" 
+                                        Grid.Column="1" HorizontalAlignment="Right" Margin="50 0">
+                                <Button HorizontalAlignment="Left"
+                                    Height="40"
+                                    Width="40"
+                                    Margin="3"
+                                    FontFamily="Segoe UI Symbol"
+                                    FontSize="21"
+                                    Foreground="#3b3a39"
+                                    Background="White"
+                                    Content="1"
+                                        FontWeight="Bold">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Background="{TemplateBinding Background}"
+                                                CornerRadius="3">
+                                                <TextBlock Text="{TemplateBinding Content}" 
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"
+                                                   FontSize="{TemplateBinding FontSize}"
+                                                   FontFamily="{TemplateBinding FontFamily}"
+                                                   Foreground="{TemplateBinding Foreground}">
+                                                </TextBlock>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                    <Button.Effect>
+                                        <DropShadowEffect ShadowDepth="3" 
+                                                      BlurRadius="15" 
+                                                      Direction="280" 
+                                                      Color="#FFC8C6C4"
+                                                      RenderingBias="Quality"              
+                                                      Opacity="0.3"/>
+                                    </Button.Effect>
+                                </Button>
+                                <Button HorizontalAlignment="Left"
+                                    Height="40"
+                                    Width="40"
+                                    Margin="3"
+                                    FontFamily="Segoe UI Symbol"
+                                    FontSize="21"
+                                    Foreground="#3b3a39"
+                                    Background="White"
+                                    Content="2">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Background="{TemplateBinding Background}"
+                                                CornerRadius="3">
+                                                <TextBlock Text="{TemplateBinding Content}" 
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"
+                                                   FontSize="{TemplateBinding FontSize}"
+                                                   FontFamily="{TemplateBinding FontFamily}"
+                                                   Foreground="{TemplateBinding Foreground}">
+                                                </TextBlock>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                    <Button.Effect>
+                                        <DropShadowEffect ShadowDepth="3" 
+                                                      BlurRadius="15" 
+                                                      Direction="280" 
+                                                      Color="#FFC8C6C4"
+                                                      RenderingBias="Quality"              
+                                                      Opacity="0.3"/>
+                                    </Button.Effect>
+                                </Button>
+                                <Button HorizontalAlignment="Left"
+                                    Height="40"
+                                    Width="40"
+                                    Margin="3"
+                                    FontFamily="Segoe UI Symbol"
+                                    FontSize="21"
+                                    Foreground="#3b3a39"
+                                    Background="White"
+                                    Content="3">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Background="{TemplateBinding Background}"
+                                                CornerRadius="3">
+                                                <TextBlock Text="{TemplateBinding Content}" 
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"
+                                                   FontSize="{TemplateBinding FontSize}"
+                                                   FontFamily="{TemplateBinding FontFamily}"
+                                                   Foreground="{TemplateBinding Foreground}">
+                                                </TextBlock>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                    <Button.Effect>
+                                        <DropShadowEffect ShadowDepth="3" 
+                                                      BlurRadius="15" 
+                                                      Direction="280" 
+                                                      Color="#FFC8C6C4"
+                                                      RenderingBias="Quality"              
+                                                      Opacity="0.3"/>
+                                    </Button.Effect>
+                                </Button>
+                            </StackPanel>
+                        </Grid>
                     </Grid>
                 </Grid>
+                
             </Grid>
         </Border>
 

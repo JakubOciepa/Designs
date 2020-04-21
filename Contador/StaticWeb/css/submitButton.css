@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+button.btn-submit {
+    padding: 5px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #0078d4;
+    overflow: hidden;
+    border: none;
+    border-radius: 3px;
+    transition: .1s linear;
+    box-shadow: 5px 5px 8px rgb(200, 198, 196);
+}
+
+button.btn-submit:hover {
+    transform: scale(1.05);
+}
+
+button.btn-submit:active {
+    transition: 0s linear;
+    transform: scale(1.02);
+}

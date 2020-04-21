@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,7 +14,17 @@ body {
     min-height: 100vh;
 }
 
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transition: 0s linear;
+    transform: scale(1.02);
+}
+
 /* Submit button  */
+
 .btn-submit {
     margin: 0 10px;
     padding: 5px 30px;
@@ -22,27 +38,86 @@ body {
     box-shadow: 5px 5px 8px rgb(200, 198, 196);
 }
 
-button:hover {
-    transform: scale(1.05);
-}
-
-button:active {
-    transition: 0s linear;
-    transform: scale(1.02);
-}
 /* Submit button */
 
 /* Standard button */
-.btn-standard{
+
+.btn-standard {
     margin: 0 10px;
+    padding: 0.5em;
     background-color: #ffffff;
-    color:#0078d4;
+    color: #0078d4;
     border: none;
     border-radius: 3px;
-    height: 2em;
-    width: 2em;
     font-size: 21px;
     transition: .1s linear;
-    box-shadow: 2px 2px 8px rgb(200, 198, 196,0.3),
-    -2px -2px 8px rgb(200, 198, 196,0.3);
+    box-shadow: 2px 2px 8px rgb(200, 198, 196, 0.3), -2px -2px 8px rgb(200, 198, 196, 0.3);
 }
+
+/* Standard button */
+
+/* Dropdown button */
+
+.btn-dropdown-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-dropdown-content ul {
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: 3em;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 8px rgb(200, 198, 196, 0.3), -2px 10px 8px rgb(200, 198, 196, 0.3);
+    opacity: 0;
+    position: none;
+    transform: translateY(-3px);
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+.btn-dropdown-content li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-dropdown-content li:hover {
+    background-color: #edebe9;
+}
+
+.btn-dropdown-content ul li:last-child:hover
+{
+    background-color: #edebe9;
+    border-radius: 0 0 3px 3px;
+}
+
+.btn-dropdown-content ul li:first-child:hover
+{
+    background-color: #edebe9;
+    border-radius: 3px 3px 0 0;
+}
+
+.btn-dropdown-content a {
+    color: #3b3a39;
+    text-decoration: none;
+}
+
+.btn-dropdown-content button.btn-standard:focus + ul{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+/* Dropdown button */

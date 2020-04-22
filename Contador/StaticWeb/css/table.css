@@ -30,7 +30,7 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
-  grid-template-columns: 30px 130px 130px 130px 130px;
+  grid-template-columns: 5% 20% 25% 20% 20% 5% 5%;
   grid-row: 30px;
   font-size: 18px;
   color: #605e5c;
@@ -45,7 +45,8 @@ body {
   align-content: stretch;
   justify-items: center;
   height: 40px;
-  grid-template-columns: 30px 130px 130px 130px 130px 30px 30px;
+  width: 100%;
+  grid-template-columns: 5% 20% 25% 20% 20% 5% 5%;
   font-weight: normal;
   color: #605e5c;
   border-bottom: solid 1px #c8c6c4;
@@ -67,7 +68,8 @@ body {
   background: white;
   border-bottom: transparent;
   box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3), -5px -5px 12px rgba(0, 0, 0, 0.1);
-  margin-right: -35px;
+  grid-template-columns: 5% 20% 20% 22% 16% 5% 5%;
+  width: 110%;
   margin-left: -20px;
   padding-left: 20px;
   z-index: 1;
@@ -145,4 +147,19 @@ body {
 
 .rounded input[type="checkbox"]:checked + label:after {
   opacity: 1;
+}
+
+.person{
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+}
+
+.person label{
+  margin: 0 3px;
+}
+.person .portrait-img{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
 }

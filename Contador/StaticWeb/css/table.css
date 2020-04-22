@@ -20,11 +20,10 @@ body {
   align-content: center;
   justify-content: flex-start;
   flex-flow: column;
-  width: 95vh;
+  width: 80vw;
   height: 70vh;
   padding: 30px;
-  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1),
-  -7px -7px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1), -7px -7px 10px rgba(0, 0, 0, 0.1);
 }
 
 .expense-header {
@@ -64,18 +63,17 @@ body {
   visibility: collapse;
 }
 
-.expense-item.active{
-  background:white;
+.expense-item.active {
+  background: white;
   border-bottom: transparent;
-  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3),
-  -5px -5px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3), -5px -5px 12px rgba(0, 0, 0, 0.1);
   margin-right: -35px;
   margin-left: -20px;
   padding-left: 20px;
   z-index: 1;
 }
 
-.checkbox-round {
+.checkbox-rounded {
   width: 1.3em;
   height: 1.3em;
   background-color: white;
@@ -87,18 +85,64 @@ body {
   cursor: pointer;
 }
 
-.checkbox-round:checked {
-  background-color: gray;
-}
-
-.remove{
+.remove {
   color: #d13438;
 }
 
-.edit{
+.edit {
   color: #0078d4
 }
 
 .expense-item.active .edit, .expense-item.active .remove {
   visibility: visible;
+}
+
+.checkbox-container{
+  margin-top:5px;
+  align-self: center;
+  justify-self: center;
+}
+
+.rounded {
+  position: relative;
+}
+
+.rounded label {
+  background-color: #fff;
+  border: 1px solid #605e5c;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 16px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 16px;
+}
+
+.rounded label:after {
+  border: 2px solid #323130;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 5px;
+  left: 2px;
+  opacity: 0;
+  position: absolute;
+  top: 2px;
+  transform: rotate(-45deg);
+  width: 8px;
+}
+
+.rounded input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.rounded input[type="checkbox"]:checked + label {
+  background-color: #ffffff;
+  border-color: #605e5c;
+}
+
+.rounded input[type="checkbox"]:checked + label:after {
+  opacity: 1;
 }

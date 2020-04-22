@@ -1,16 +1,104 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  flex-flow: column;
+  width: 95vh;
+  height: 70vh;
+  padding: 30px;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1),
+  -7px -7px 10px rgba(0, 0, 0, 0.1);
+}
+
+.expense-header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 30px 130px 130px 130px 130px;
+  grid-row: 30px;
+  font-size: 18px;
+  color: #605e5c;
+  font-weight: 700;
+  border-bottom: solid 1px #c8c6c4;
+  padding: 5px 0;
+}
+
+.expense-item {
+  display: grid;
+  align-items: center;
+  align-content: stretch;
+  justify-items: center;
+  height: 40px;
+  grid-template-columns: 30px 130px 130px 130px 130px 30px 30px;
+  font-weight: normal;
+  color: #605e5c;
+  border-bottom: solid 1px #c8c6c4;
+}
+
+.expense-item.selected {
+  background-color: #f3f2f1;
+}
+
+.expense-item .person {
+  justify-self: start;
+}
+
+.expense-item .edit, .expense-item .remove {
+  visibility: collapse;
+}
+
+.expense-item.active{
+  background:white;
+  border-bottom: transparent;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3),
+  -5px -5px 12px rgba(0, 0, 0, 0.1);
+  margin-right: -35px;
+  margin-left: -20px;
+  padding-left: 20px;
+  z-index: 1;
+}
+
+.checkbox-round {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 3px;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background-color: gray;
+}
+
+.remove{
+  color: #d13438;
+}
+
+.edit{
+  color: #0078d4
+}
+
+.expense-item.active .edit, .expense-item.active .remove {
+  visibility: visible;
 }

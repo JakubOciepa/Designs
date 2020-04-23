@@ -25,17 +25,17 @@
           <label for="">Marysia</label>
           <img src="../Contador/Resources/kot.jpg" alt=""></button>
         <ul>
-            <li><a href="#">Account settings</a></li>
-            <li><a href="#">Logout</a></li>
+          <li><a href="#">Account settings</a></li>
+          <li><a href="#">Logout</a></li>
         </ul>
-    </div>
+      </div>
     </div>
   </div>
   <div class="content">
     <nav class="sidebar">
       <div class="logo">
         <i class="fab fa-grunt"></i>
-        <label for="">CONTADOR</label>
+        <label>CONTADOR</label>
       </div>
       <div class="navbar">
         <ul>
@@ -48,7 +48,196 @@
         <a href="#"><i class="fas fa-cog"></i> Settings</a>
       </div>
     </nav>
-    <div class="main-content">MainContent</div>    
+    <div class="main-content">
+      <div class="breadcrumb">
+        <label class="component-name">Expenses /</label>
+        <label class="component-specific">2020</label>
+      </div>
+      <div class="month-name">April</div>
+      <button class="btn-submit add-expense-btn">+ Add expense</button>
+      <div class="manage-list-buttons">
+        <button class="btn-standard"><i class="far fa-save"></i></button>
+        <button class="btn-standard"><i class="fas fa-print"></i></button>
+        <button class="btn-standard btn-remove"><i class="far fa-trash-alt"></i></button>
+      </div>
+      <div class="search">
+        <button class="btn-flat"><i class="fas fa-filter"></i></button>
+        <input type="text" placeholder="Search...">
+      </div>
+      <div class="table-container">
+        <div class="expense-header">
+          <div class="checkbox-container">
+            <div class="rounded">
+              <input type="checkbox" id="checkbox" name="item-check" checked />
+              <label for="checkbox"></label>
+            </div>
+          </div>
+          <div class="person"> Person </div>
+          <div class="description">Description</div>
+          <div class="date">Date</div>
+          <div class="value">Value</div>
+        </div>
+
+        <div class="expense-item selected">
+          <div class="checkbox-container">
+            <div class="rounded">
+              <input type="checkbox" id="checkbox" name="item-check" checked />
+              <label for="checkbox"></label>
+            </div>
+          </div>
+          <div class="person">
+            <img class="portrait-img" src="../Contador/Resources/Paskuda.jpg" alt="portait">
+            <label for="portait">Marysia</label>
+          </div>
+          <div class="description">Słodkości</div>
+          <div class="date">18.04.2020</div>
+          <div class="value">123zł</div>
+          <span class="edit"><i class="far fa-edit"></i></span>
+          <span class="remove"><i class="far fa-trash-alt"></i></span>
+        </div>
+
+        <div class="expense-item">
+          <div class="checkbox-container">
+            <div class="rounded">
+              <input type="checkbox" id="checkbox" name="item-check" checked />
+              <label for="checkbox"></label>
+            </div>
+          </div>
+          <div class="person">
+            <img class="portrait-img" src="../Contador/Resources/Paskuda.jpg" alt="portait">
+            <label for="portait">Marysia</label>
+          </div>
+          <div class="description">Słodkości</div>
+          <div class="date">18.04.2020</div>
+          <div class="value">123zł</div>
+          <span class="edit"><i class="far fa-edit"></i></span>
+          <span class="remove"><i class="far fa-trash-alt"></i></span>
+        </div>
+
+        <div class="expense-item">
+          <div class="checkbox-container">
+            <div class="rounded">
+              <input type="checkbox" id="checkbox" name="item-check" />
+              <label for="checkbox"></label>
+            </div>
+          </div>
+          <div class="person">
+            <img class="portrait-img" src="../Contador/Resources/Paskuda.jpg" alt="portait">
+            <label for="portait">Marysia</label>
+          </div>
+          <div class="description">Słodkości</div>
+          <div class="date">18.04.2020</div>
+          <div class="value">123zł</div>
+          <span class="edit"><i class="far fa-edit"></i></span>
+          <span class="remove"><i class="far fa-trash-alt"></i></span>
+        </div>
+
+        <div class="expense-item selected">
+          <div class="checkbox-container">
+            <div class="rounded">
+              <input type="checkbox" id="checkbox" name="item-check" />
+              <label for="checkbox"></label>
+            </div>
+          </div>
+          <div class="person">
+            <img class="portrait-img" src="../Contador/Resources/Paskuda.jpg" alt="portait">
+            <label for="portait">Marysia</label>
+          </div>
+          <div class="description">Słodkości</div>
+          <div class="date">18.04.2020</div>
+          <div class="value">123zł</div>
+          <span class="edit"><i class="far fa-edit"></i></span>
+          <span class="remove"><i class="far fa-trash-alt"></i></span>
+        </div>
+
+        <div class="expense-item">
+          <div class="checkbox-container">
+            <div class="rounded">
+              <input type="checkbox" id="checkbox" name="item-check" />
+              <label for="checkbox"></label>
+            </div>
+          </div>
+          <div class="person">
+            <img class="portrait-img" src="../Contador/Resources/Paskuda.jpg" alt="portait">
+            <label for="portait">Marysia</label>
+          </div>
+          <div class="description">Słodkości</div>
+          <div class="date">18.04.2020</div>
+          <div class="value">123zł</div>
+          <span class="edit"><i class="far fa-edit"></i></span>
+          <span class="remove"><i class="far fa-trash-alt"></i></span>
+        </div>
+
+        <div class="expense-item active">
+          <div class="checkbox-container">
+            <div class="rounded">
+              <input type="checkbox" id="checkbox" name="item-check" />
+              <label for="checkbox"></label>
+            </div>
+          </div>
+          <div class="person">
+            <img class="portrait-img" src="../Contador/Resources/Paskuda.jpg" alt="portait">
+            <label for="portait">Marysia</label>
+          </div>
+          <div class="description">Słodkości</div>
+          <div class="date">18.04.2020</div>
+          <div class="value">123zł</div>
+          <span class="edit"><i class="far fa-edit"></i></span>
+          <span class="remove"><i class="far fa-trash-alt"></i></span>
+        </div>
+
+        <div class="expense-item">
+          <div class="checkbox-container">
+            <div class="rounded">
+              <input type="checkbox" id="checkbox" name="item-check" />
+              <label for="checkbox"></label>
+            </div>
+          </div>
+          <div class="person">
+            <img class="portrait-img" src="../Contador/Resources/Paskuda.jpg" alt="portait">
+            <label for="portait">Marysia</label>
+          </div>
+          <div class="description">Słodkości</div>
+          <div class="date">18.04.2020</div>
+          <div class="value">123zł</div>
+          <span class="edit"><i class="far fa-edit"></i></span>
+          <span class="remove"><i class="far fa-trash-alt"></i></span>
+        </div>
+        <div class="expense-item">
+          <div class="checkbox-container">
+            <div class="rounded">
+              <input type="checkbox" id="checkbox" name="item-check" />
+              <label for="checkbox"></label>
+            </div>
+          </div>
+          <div class="person">
+            <img class="portrait-img" src="../Contador/Resources/Paskuda.jpg" alt="portait">
+            <label for="portait">Marysia</label>
+          </div>
+          <div class="description">Słodkości</div>
+          <div class="date">18.04.2020</div>
+          <div class="value">123zł</div>
+          <span class="edit"><i class="far fa-edit"></i></span>
+          <span class="remove"><i class="far fa-trash-alt"></i></span>
+        </div>
+
+      </div>
+      <div class="select-expense-num">
+        <div class="btn-dropdown-content">
+          <button class="btn-standard" style="color:#3b3a39;">Show: 8</button>
+          <ul>
+            <li><a href="#">8</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">12</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-selectors">
+        <button class="btn-standard active">1</button>
+        <button class="btn-standard">2</button>
+        <button class="btn-standard">3</button>
+      </div>
+    </div>
   </div>
 </body>
 

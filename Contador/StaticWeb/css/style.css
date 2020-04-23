@@ -139,7 +139,7 @@ body {
   box-shadow: 5px 5px 10px rgba(200, 198, 196, 0.6), -3px -3px 10px rgba(200, 198, 196, 0.3);
 }
 
-.sidebar .logo{
+.sidebar .logo {
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -149,23 +149,61 @@ body {
   font-weight: 700;
 }
 
-.sidebar .logo i{
+.sidebar .logo i {
   font-size: 5em;
   font-weight: normal;
 }
 
-.sidebar-footer{
-  margin-bottom:1em;
-}
-
-.sidebar .navbar{
+.sidebar .navbar {
   align-self: center;
   justify-self: center;
   width: 100%;
   position: absolute;
-  top:50%;
-  margin-top: -15%;
+  top: 50%;
+  margin-top: -30%;
   text-align: center;
+}
+
+.sidebar .navbar ul {
+  list-style: none;
+}
+
+.sidebar .navbar li {
+  display: grid;
+  grid-template-columns: minmax(30px, 60px) minmax(50px, 100px);
+  margin: 10px 0;
+}
+
+.sidebar .navbar li i{
+  justify-self: end;
+  align-self: center;
+}
+
+.sidebar .navbar li a{
+  justify-self: center;
+}
+
+.sidebar .navbar li.active{
+  border-left: 4px solid #3b3a39;
+  font-weight: 700;
+}
+
+.sidebar a {
+  color: #3b3a39;
+  text-decoration: none;
+}
+
+.sidebar-footer {
+  margin-bottom: 1em;
+  width: 100%;
+  position:absolute;
+  bottom: 10%;
+  text-align: center;
+}
+
+.sidebar-footer.active{
+  border-left: 4px solid #3b3a39;
+  font-weight: 700;
 }
 
 .main-content {

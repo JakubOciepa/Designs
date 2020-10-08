@@ -96,6 +96,6 @@
 
     </WindowChrome.WindowChrome>
     <Grid>
-        
+        <local:MainContentView DataContext="{Binding MainContentViewModel}"/>
     </Grid>
 </Window>

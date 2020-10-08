@@ -9,8 +9,6 @@
   <ItemGroup>
     <Folder Include="Animations\" />
     <Folder Include="Helpers\" />
-    <Folder Include="Styles\" />
-    <Folder Include="Views\" />
   </ItemGroup>
 
 </Project>

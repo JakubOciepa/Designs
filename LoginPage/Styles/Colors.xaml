@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:LoginPage.Styles">
+    <Color x:Key="StandardGreen">#AEE239</Color>
+    <SolidColorBrush x:Key="StandardGreenSolidBrush" Color="{StaticResource StandardGreen}"/>
+
+    <Color x:Key="DarkGreen">#8FBE00</Color>
+    <SolidColorBrush x:Key="DarkGreenSolidBrush" Color="{StaticResource DarkGreen}"/>
+
+    <Color x:Key="StandardBlue">#40C0CB</Color>
+    <SolidColorBrush x:Key="StandardBlueSolidBrush" Color="{StaticResource StandardBlue}"/>
+
+    <Color x:Key="SuperDarkBlue">#035766</Color>
+    <SolidColorBrush x:Key="SuperDarkBlueSolidBrush" Color="{StaticResource SuperDarkBlue}"/>
+
+    <Color x:Key="DarkBlue">#00A8C6</Color>
+    <SolidColorBrush x:Key="DarkBlueSolidBrush" Color="{StaticResource DarkBlue}"/>
+
+    <Color x:Key="LightOfWhite">#FDFDFD</Color>
+    <SolidColorBrush x:Key="LightOfWhiteSolidBrush" Color="{StaticResource LightOfWhite}"/>
+
+    <Color x:Key="AlmostWhite">#FAFAFA</Color>
+    <SolidColorBrush x:Key="AlmostWhiteSolidBrush" Color="{StaticResource AlmostWhite}"/>
+
+    <Color x:Key="LightGray">#F5F2F2</Color>
+    <SolidColorBrush x:Key="LightGraySolidBrush" Color="{StaticResource LightGray}"/>
+
+    <Color x:Key="StandardRed">#E51814</Color>
+    <SolidColorBrush x:Key="StandardRedSolidBrush" Color="{StaticResource StandardRed}"/>
+
+    <Color x:Key="StandardGray">#e6e6e6</Color>
+    <SolidColorBrush x:Key="StandardGraySolidBrush" Color="{StaticResource StandardGray}"/>
+</ResourceDictionary>

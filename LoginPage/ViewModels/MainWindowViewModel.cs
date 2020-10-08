@@ -69,7 +69,6 @@ namespace LoginPage.ViewModels
             MaximizeCommand = new RelayCommand<Window>(_ => _mainWindow.WindowState ^= WindowState.Maximized);
             CloseCommand = new RelayCommand<Window>(_ => _mainWindow.Close());
             MenuCommand = new RelayCommand<Window>(_ => SystemCommands.ShowSystemMenu(_mainWindow, GetMousePosition()));
-
         }
 
         private Point GetMousePosition()

@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace LoginPage.ViewModels
 {
@@ -18,7 +17,6 @@ namespace LoginPage.ViewModels
             get => _errorOccured;
             set => SetField(ref _errorOccured, value, nameof(ErrorOccured));
         }
-
 
         public bool IsEmailValid
         {

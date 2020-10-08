@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Animations\" />
     <Folder Include="Helpers\" />
   </ItemGroup>
 

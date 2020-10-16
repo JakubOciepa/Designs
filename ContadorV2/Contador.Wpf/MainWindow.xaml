@@ -7,7 +7,7 @@
         xmlns:controls="clr-namespace:Contador.Wpf.Views.Controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <controls:BudgetCategoryButton/>
+    <Grid Background="#FFDEDEDE">
+        <controls:BudgetCategoryButton Height="150" Width="125"/>
     </Grid>
 </Window>

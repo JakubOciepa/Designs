@@ -13,15 +13,7 @@
             <ColumnDefinition Width="6*"/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0" Background="White">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Label Content="Contador" 
-                   HorizontalAlignment="Center" 
-                   VerticalAlignment="Center"
-                   FontSize="18"
-                   FontWeight="Bold"/>
+            <controls:MenuControl/>
         </Grid>
         <Grid Grid.Column="1">
             <controls:BudgetCategoryButton Height="150" Width="125"/>

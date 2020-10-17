@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="Contador.Wpf.Views.Controls.MenuControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Contador.Wpf.Views.Controls"
+             xmlns:fa="http://schemas.fontawesome.io/icons/"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Color x:Key="MainTextColor">Black</Color>
+        <SolidColorBrush x:Key="MainTextColorBrush" Color="{StaticResource MainTextColor}"></SolidColorBrush>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Contador"
+                   Grid.Row="0"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center"
+                   FontSize="18"
+                   FontWeight="Bold" 
+                   Foreground="{StaticResource ResourceKey=MainTextColorBrush}" />
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10">
+                <fa:FontAwesome Icon="Columns" FontSize="15" VerticalAlignment="Center" FontWeight="Bold" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
+                <Label Content="Strona główna" FontSize="9" VerticalAlignment="Center" FontWeight="Bold" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10">
+                <fa:FontAwesome Icon="Money" FontSize="15" VerticalAlignment="Center" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
+                <Label Content="Wydatki" FontSize="9" VerticalAlignment="Center" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10">
+                <fa:FontAwesome Icon="Bank" FontSize="15" VerticalAlignment="Center" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
+                <Label Content="Oszczędności" FontSize="9" VerticalAlignment="Center" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10">
+                <fa:FontAwesome Icon="LineChart" FontSize="15" VerticalAlignment="Center" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
+                <Label Content="Inwestycje" FontSize="9" VerticalAlignment="Center" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

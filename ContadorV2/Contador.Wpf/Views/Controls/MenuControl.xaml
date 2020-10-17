@@ -8,8 +8,15 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
-        <Color x:Key="MainTextColor">Black</Color>
+        <Color x:Key="MainTextColor">#37393A</Color>
         <SolidColorBrush x:Key="MainTextColorBrush" Color="{StaticResource MainTextColor}"></SolidColorBrush>
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="Foreground" Value="{StaticResource MainTextColorBrush}"/>
+            <Setter Property="FontFamily" Value="Bahnschrift"/>
+        </Style>
+        <Style TargetType="fa:FontAwesome">
+            <Setter Property="Foreground" Value="{StaticResource MainTextColorBrush}"/>
+        </Style>
     </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -25,20 +32,20 @@
                    Foreground="{StaticResource ResourceKey=MainTextColorBrush}" />
         <StackPanel Grid.Row="1" HorizontalAlignment="Center">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10">
-                <fa:FontAwesome Icon="Columns" FontSize="15" VerticalAlignment="Center" FontWeight="Bold" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
-                <Label Content="Strona główna" FontSize="9" VerticalAlignment="Center" FontWeight="Bold" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
+                <fa:FontAwesome Icon="Columns" FontSize="15" VerticalAlignment="Center" FontWeight="Bold" Foreground="Black"/>
+                <Label Content="Strona główna" FontSize="9" VerticalAlignment="Center" FontWeight="Bold" Foreground="Black"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10">
-                <fa:FontAwesome Icon="Money" FontSize="15" VerticalAlignment="Center" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
-                <Label Content="Wydatki" FontSize="9" VerticalAlignment="Center" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
+                <fa:FontAwesome Icon="Money" FontSize="15" VerticalAlignment="Center"/>
+                <Label Content="Wydatki" FontSize="9" VerticalAlignment="Center"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10">
-                <fa:FontAwesome Icon="Bank" FontSize="15" VerticalAlignment="Center" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
-                <Label Content="Oszczędności" FontSize="9" VerticalAlignment="Center" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
+                <fa:FontAwesome Icon="Bank" FontSize="15" VerticalAlignment="Center"/>
+                <Label Content="Oszczędności" FontSize="9" VerticalAlignment="Center"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10">
-                <fa:FontAwesome Icon="LineChart" FontSize="15" VerticalAlignment="Center" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
-                <Label Content="Inwestycje" FontSize="9" VerticalAlignment="Center" Foreground="{StaticResource ResourceKey=MainTextColorBrush}"/>
+                <fa:FontAwesome Icon="LineChart" FontSize="15" VerticalAlignment="Center"/>
+                <Label Content="Inwestycje" FontSize="9" VerticalAlignment="Center"/>
             </StackPanel>
         </StackPanel>
     </Grid>

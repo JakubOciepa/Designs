@@ -7,6 +7,14 @@
              xmlns:fa="http://schemas.fontawesome.io/icons/"
              mc:Ignorable="d" 
              d:DesignHeight="150" d:DesignWidth="125">
+    <UserControl.Resources>
+        <Color x:Key="MainTextColor">#37393A</Color>
+        <SolidColorBrush x:Key="MainTextColorBrush" Color="{StaticResource MainTextColor}"></SolidColorBrush>
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="Foreground" Value="{StaticResource MainTextColorBrush}"/>
+            <Setter Property="FontFamily" Value="Bahnschrift"/>
+        </Style>
+    </UserControl.Resources>
     <Border Background="#FFDEEFED" CornerRadius="5">
         <Border.Effect>
             <DropShadowEffect BlurRadius="30" ShadowDepth="7" Opacity="0.2" Direction="300" Color="DarkGray"/>

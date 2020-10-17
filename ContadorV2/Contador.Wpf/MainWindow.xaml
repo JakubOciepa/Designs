@@ -16,6 +16,7 @@
             <controls:MenuControl/>
         </Grid>
         <Grid Grid.Column="1">
+            <controls:TopBar/>
             <controls:BudgetCategoryButton Height="150" Width="125"/>
         </Grid>
     </Grid>
